@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 115, 0, 0.767);
+
+  & .nav-bar {
+    display: flex;
+    align-items: center;
+  }  
+
+  & .nav-bar-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .nav-list-item {
+    margin: auto 2rem;
+  }      
+  
+  & .nav-item-link {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+div.background {
+  background-color: black;
+}
+
+.degrade-text {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  
+}
