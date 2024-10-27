@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'kimetsu';
+  }
+  
+  html {
+    background-color: black;
+  }
+  
+  :root {
+    --darkColor: #0D0D0D;
+    --lightColor: #FFFFFF;
+    --redColor: #730202;
+    --pinkColor: #F21B42;
+    --lightRed: #F21D2F;
+    --orangered: #FF4500;
+  
+    --lightBlueIcon: #0468BF;
+    --darkBlueIcon: #021F59;
+  }
+  
+  @font-face {
+    font-family: 'kimetsu';
+    src: url('../assets/blood-crow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    background: url('../assets/img/luxa.org-opacity-changed-thumb-1920-1363137.png') no-repeat center center / cover fixed;
+    height: 100vh;
+    position: absolute;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    font-size: xx-large;
+    background-color: rgba(3, 0, 0, 0.466);
+    
+    & img {
+      width: 130px;
+      height: 130px;
+      margin: -12px 10px;
+    }
+  
+    & .nav-bar {
+      display: flex;
+      align-items: center;
+    }  
+  
+    & .nav-bar-list {
+      display: flex;
+      justify-content: start;
+    }
+  
+    & .nav-list-item {
+      margin: auto 2rem;
+    }      
+    
+    & .nav-item-link {
+      text-decoration: none;
+      color: var(--lightColor);
+      text-shadow: 3px 1px 1px var(--redColor);
+    }
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+  
+    & .content {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      margin-top: 30px;
+    }
+    
+    & .charList {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+  
+    & .charList li {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      padding: 5px;
+    }
+  
+    & .charList li img {
+      width: 100px;
+      border: 3px solid var(--lightBlueIcon);
+      border-radius: 50%;    
+    }
+  
+    & li:hover {
+      outline: 2px solid var(--darkBlueIcon);
+      box-shadow: 0px 0px 10px 5px var(--lightBlueIcon);
+      transition: 0.2s;
+      cursor: pointer;
+    }
+  
+    & div.character {
+      display: none;
+      position: relative;
+      color: white;
+    }
+  
+    & .character h1 {
+      z-index: 0;
+    }
+  
+    & .img {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+  
+    & .img img {
+      width: 700px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*
+  .degrade-text {
+    /* Primeiro passo: definir um degradê como fundo 
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto 
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele 
+    -webkit-text-fill-color: transparent;
+  
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` 
+    color: black;
+  
+  }
+    .degrade-border-square {
+      border: 5px solid transparent;
+      border-image: linear-gradient(to bottom, var(--darkBlueIcon), var(--redColor)) 1;
+  }
+  
+  
+    */
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'kimetsu';
+      }
+      
+      html {
+        background-color: rgb(0, 0, 0);
+      }
+      
+      :root {
+        --darkColor: #0D0D0D;
+        --lightColor: #FFFFFF;
+        --redColor: #730202;
+        --pinkColor: #F21B42;
+        --lightRed: #F21D2F;
+        --orangered: #FF4500;
+      
+        --lightBlueIcon: #0468BF;
+        --darkBlueIcon: #021F59;
+      }
+      
+      @font-face {
+        font-family: 'kimetsu';
+        src: url('../assets/blood-crow.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      body {
+        background: url('../assets/img/luxa.org-opacity-changed-thumb-1920-1363137.png') no-repeat center center / cover fixed;
+        height: 100vh;
+        position: absolute;
+      }
+      
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
+        font-size: xx-large;
+        background-color: rgba(3, 0, 0, 0.466);
+        
+        & img {
+          width: 130px;
+          height: 130px;
+          margin: -12px 10px;
+        }
+      
+        & .nav-bar {
+          display: flex;
+          align-items: center;
+        }  
+      
+        & .nav-bar-list {
+          display: flex;
+          justify-content: start;
+        }
+      
+        & .nav-list-item {
+          margin: auto 2rem;
+        }      
+        
+        & .nav-item-link {
+          text-decoration: none;
+          color: var(--lightColor);
+          text-shadow: 3px 1px 1px var(--redColor);
+        }
+      }
+      
+      main {
+        display: flex;
+        position: relative;
+      
+        & .content {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+        }
+        
+        & .charList {
+          position: relative;
+        }
+      
+        & .charList li {
+          position: absolute;
+          border-radius: 50%;
+          padding: 5px;
+        }
+      
+        & .c1 {
+          left: 50px;
+        }
+      
+        & .charList li img {
+          width: 100px;
+          border: 3px solid var(--lightBlueIcon);
+          border-radius: 50%;    
+        }
+      
+        & li:hover {
+          outline: 2px solid var(--lightBlueIcon);
+          box-shadow: 0px 0px 10px 5px var(--darkBlueIcon);
+          transition: 0.2s;
+          cursor: pointer;
+        }
+      
+        & .character-card {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          margin-top: 70px;
+        }
+      
+        & .character-img {
+          position: relative;
+          z-index: 2;
+          width: 600px;
+          border: 2px solid rgb(255, 255, 0);
+          border-radius: 40%;
+        }
+      
+        & .character-name {
+          position: absolute;
+          top: 100px;
+          z-index: 0;
+          color: rgb(255, 230, 0);
+          font-size: 143px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      /*
+      .degrade-text {
+        /* Primeiro passo: definir um degradê como fundo 
+        background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+        
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto 
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+      
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele 
+        -webkit-text-fill-color: transparent;
+      
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` 
+        color: black;
+      
+      }
+        .degrade-border-square {
+          border: 5px solid transparent;
+          border-image: linear-gradient(to bottom, var(--darkBlueIcon), var(--redColor)) 1;
+      }
+      
+      
+        */
